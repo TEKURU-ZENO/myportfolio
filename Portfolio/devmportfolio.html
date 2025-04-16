@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <canvas id="background-canvas"></canvas>
+    <div class="bg-image-container" style="background-image: url('/api/placeholder/1920/1080'); opacity: 1;"></div>
+    <nav class="navbar">
+        <a href="#home" class="navbar-brand">Dev Mehta's Portfolio</a>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="mobile-menu-btn">
+            <i class="fas fa-bars"></i>
+        </button>
+    </nav>
+
+    <section id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Dev Mehta</h1>
+                <h2 class="hero-subtitle">Budding Computer Science Engineer</h2>
+                <p class="hero-text">
+                    I am a computer science engineering graduate who is passionate about building digital products that are efficient, accessible, and esthetically pleasing. My expertise lies in building web applications with clean architecture and user-centered design. I aim to build code, creativity and continuous learning into seamless, scalable experiences that address real-world issues.
+                </p>
+                <div class="cta-buttons">
+                    <a href="#projects" class="btn">
+                        <i class="fas fa-code"></i> View Projects
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <i class="fas fa-envelope"></i> Contact Me
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <div class="about-container">
+                <div class="about-content">
+                    <h2>About Me</h2>
+                    <p>
+                        I am an enthusiastic Computer Science Graduate with a solid background in Web Development. I started at 15 (that was 6 years ago), and since then fell in love with coding.
+                    </p>
+                    <p>
+                       I learnt Python , C++ , HTML/CSS , JavaScript, React, and Node. js via academic projects and personal study. I love solving problems and building intuitive, user-focused applications
+                    </p>
+                    <p>
+                        When I'm not coding, you can find me hiking, reading light novels, jamming with my playlist I believe in continuous learning and staying updated with industry trends.
+                    </p>
+                </div>
+                <div class="about-image-container">
+                    <img src="./pictures/profilepic.jpg" alt="Developer Profile" class="about-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <h2 class="section-title">My Skills</h2>
+            
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="fas fa-code skill-icon"></i>
+                    <h3 class="skill-name">Frontend Development</h3>
+                    <p>Creating responsive, accessible, and beautiful user interfaces with modern frameworks.</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-server skill-icon"></i>
+                    <h3 class="skill-name">Backend Development</h3>
+                    <p>Building robust server-side applications and APIs that power the frontend.</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-database skill-icon"></i>
+                    <h3 class="skill-name">Database Design</h3>
+                    <p>Designing optimal and efficient database schemas and optimize database performance.</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-paint-brush skill-icon"></i>
+                    <h3 class="skill-name">UI/UX Design</h3>
+                    <p>Creating intuitive and engaging user experiences with a focus on usability.</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-chart-line skill-icon"></i>
+                    <h3 class="skill-name">Data Analysis</h3>
+                    <p>Transforming raw data into actionable insights with clarity, precision, and a user-centric mindset.</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-mobile-alt skill-icon"></i>
+                    <h3 class="skill-name">Mobile App Development</h3>
+                    <p>Building and developing seamless and performance efficient mobile applications with modern UI/UX.</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-brain skill-icon"></i>
+                    <h3 class="skill-name">AI/ML Development</h3>
+                    <p>DEsigning and developing intelligent sysems that can adapt , learn and mimic human intelligence with efficiency.</p>
+                </div>
+            </div>
+
+            <div class="languages-section">
+                <h3 class="languages-title">Languages & Technologies</h3>
+                <div class="languages-grid">
+                    <div class="language-card">
+                        <img src="https://cdn.cdnlogo.com/logos/h/84/html.svg" alt="HTML" class="language-logo">
+                        <h4 class="language-name">HTML</h4>
+                    </div>
+                    <div class="language-card">
+                        <img src="https://cdn.cdnlogo.com/logos/c/18/css.svg" alt="CSS" class="language-logo">
+                        <h4 class="language-name">CSS</h4>
+                    </div>
+                    <div class="language-card">
+                        <img src="https://cdn.cdnlogo.com/logos/j/33/javascript.svg" alt="JavaScript" class="language-logo">
+                        <h4 class="language-name">JavaScript</h4>
+                    </div>
+                    <div class="language-card">
+                        <img src="https://cdn.cdnlogo.com/logos/r/63/react.svg" alt="React" class="language-logo">
+                        <h4 class="language-name">React</h4>
+                    </div>
+                    <div class="language-card">
+                        <img src="https://static.cdnlogo.com/logos/n/94/nodejs-icon.svg" alt="Node.js" class="language-logo">
+                        <h4 class="language-name">Node.js</h4>
+                    </div>
+                    <div class="language-card">
+                        <img src="https://static.cdnlogo.com/logos/p/3/python.svg" alt="Python" class="language-logo">
+                        <h4 class="language-name">Python</h4>
+                    </div>
+                    <div class="language-card">
+                        <img src="https://cdn.worldvectorlogo.com/logos/c-1.svg" alt="C++" class="language-logo">
+                        <h4 class="language-name">C/C++</h4>
+                    </div>
+                    <div class="language-card">
+                        <img src="https://static.cdnlogo.com/logos/m/78/mysql.svg" alt="SQL" class="language-logo">
+                        <h4 class="language-name">SQL</h4>
+                    </div>
+                    <div class="language-card">
+                        <img src="https://static.cdnlogo.com/logos/j/2/java.svg" alt="Java" class="language-logo">
+                        <h4 class="language-name">Java</h4>
+                    </div>
+                    <div class="language-card">
+                        <img src="https://static.cdnlogo.com/logos/s/13/swift.svg" alt="Swift" class="language-logo">
+                        <h4 class="language-name">Swift</h4>
+                    </div>
+                    <div class="language-card">
+                        <img src="https://static.cdnlogo.com/logos/a/17/arduino.svg" alt="Arduino" class="language-logo">
+                        <h4 class="language-name">Arduino</h4>
+                    </div>
+                    <div class="language-card">
+                        <img src="https://static.cdnlogo.com/logos/m/53/microsoft-excel.svg" alt="Excel" class="language-logo">
+                        <h4 class="language-name">Excel</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3 class="project-title">Music Streaming System</h3>
+                        <div class="project-tags">
+                            <span class="project-tag">Javascript</span>
+                            <span class="project-tag">HTML/CSS</span>
+                            <span class="project-tag">SQL</span>
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">OpenAI</span>
+                        </div>
+                        <p>A fully functioning music streaming system with AI preference mix and user management.</p>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3 class="project-title">Hotel Management System</h3>
+                        <div class="project-tags">
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">HTML/CSS</span>
+                            <span class="project-tag">Javascript</span>
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">SQL</span>
+                        </div>
+                        <p>A multi-module hotel management system with item shopping , restaurant , service booking , room booking , pdf bill generation and user management.</p>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3 class="project-title">Weather Dashboard</h3>
+                        <div class="project-tags">
+                            <span class="project-tag">JavaScript</span>
+                            <span class="project-tag">API</span>
+                            <span class="project-tag">Chart.js</span>
+                        </div>
+                        <p>An interactive weather dashboard that displays current weather conditions and forecasts for multiple locations with data visualization.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h2>Let's Talk</h2>
+                    <p>Feel free to reach out if you're looking for a developer, have a question, or just want to connect.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4>Email</h4>
+                                <p>devmehta060505@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>+91XXXXXXXXXX</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Chennai , TN , India</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="https://github.com/TEKURU-ZENO" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/dev-mehta-1861bb2a0/" class="social-link">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <label for="name" class="form-label">Your Name</label>
+                            <input type="text" id="name" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">Your Email</label>
+                            <input type="email" id="email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject" class="form-label">Subject</label>
+                            <input type="text" id="subject" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea id="message" class="form-control" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">DevPortfolio</div>
+                <ul class="footer-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="copyright">
+                    &copy; 2025 Dev Mehta . All rights reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="floating-chat">
+        <i class="fas fa-comment"></i>
+    </div>
+
+    <script src = "script.js"></script>
+</body>
+</html>
