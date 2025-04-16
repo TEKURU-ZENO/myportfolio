@@ -67,10 +67,12 @@ section:nth-child(even) {
     width: 100%;
     height: 100%;
     z-index: -1;
-    opacity: 0.5;
+    opacity: 0.7;
     background-size: cover;
     background-position: center;
     transition: opacity 1s ease;
+    background-repeat: no-repeat;
+    pointer-events: none;
 }
 
 /* Navbar Styles */
@@ -728,21 +730,18 @@ footer {
     transform: translateY(-5px) scale(1.05);
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
 }
-
-/* 3D Effect for cards */
 .card-3d {
     transform-style: preserve-3d;
     perspective: 1000px;
 }
 
-/* Canvas for background */
 #background-canvas {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -3;
+    z-index: -2;
     opacity: 0.3;
 }
 
